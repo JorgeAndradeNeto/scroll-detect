@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jorge Andrade Neto - https://github.com/JorgeAndradeNeto" />
+    <title>SCROLL DETECT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+       
+    </header>
+    <main>
+        <section class="text-center s1">
+            <div class="space"></div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>SCROLL DETECT</h1>
+                        <h2><span class="bold">Scroll Detect</span> é um código <span class="bold">simples</span> de detectar a rolagem da tela pra cima e para baixo. Motivada por uma série de fatores relacionadas a minha dificuldade e a de outros em achar essa lógica para a construção do código. <br/>Espero <span class="bold">ajudar</span> aqueles que precisem.</h2>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>SCROLL DETECT</h1>
+                        <h2><span class="bold">CODE:</span></h2>
+                        <br/>
+                        <pre class="text-left">
+var lst = 0;
+$( window ).scroll(function(event) {
+    var st = $(this).scrollTop();
+    if(st > lst){
+        //DOWN
+    } else {
+        //UP
+    }
+    lst = st;
+});
+                        </pre>
+                        <br/>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4"></div>
+                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
+                        <a href="https://github.com/JorgeAndradeNeto/scroll-detect" class="btn btn-default btn-lg">DOWNLOAD</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
+                        <a href="https://github.com/JorgeAndradeNeto/scroll-detect" class="btn btn-danger btn-lg">CONTRIBUA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary">
+        <div class="container text-center">
+            <div class="row">   
+                <div class="col-xs-12">
+                    <br/>
+                    <span class="h4 clearfix">Author: <a href="https://github.com/JorgeAndradeNeto" class="">https://github.com/JorgeAndradeNeto</a></span>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

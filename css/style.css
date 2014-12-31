@@ -1,0 +1,41 @@
+body *{line-height:170%;letter-spacing:-1px;}
+body{font-family: 'Open Sans', sans-serif;font-weight: 400;}
+h1{font-size:60px;font-weight: 800;}
+.bold{font-weight: 700;}
+.black{font-weight: 800;}
+
+/* ESTRUTURA */
+section{width: 100%;min-height:768px;}
+section.s1{background-color:#3498db;color:#FFFFFF;}
+section.s1 .bold{color:#34495e;}
+
+.btn{border:none;border-radius:0px;-webkit-border-radius:0px;-moz-border-radius:0px;}
+.btn-default{background-color:#34495e;color:#FFFFFF;}
+.btn-danger{background:#c0392b;}
+
+pre{padding:20px 20px 10px;line-height:130%;font-size:14px;background-color:transparent;border-radius:0px;-webkit-border-radius:0px;-moz-border-radius:0px;}
+
+.content{max-width:1160px;padding:10px;display:inline-block;vertical-align:middle;}
+.bg-primary a, .bg-primary a:hover{color:#34495e;}
+/* CLASS */
+.inline-block {display:inline-block;vertical-align:middle;}
+.space {width:1px;display:inline-block;height:768px;vertical-align:middle;}
+
+@media (max-width: 767px) {
+	body *{line-height:130%;}
+	h1 {line-height:90%;}
+	h2 {font-size:24px;}
+	section{min-height:650px;}
+	.space {height:650px;}
+	.content{width:97%;}
+}
+@media (max-width: 480px) {
+	section{min-height:550px;}
+	.space {height:550px;}
+}
+@media (min-width: 768px) and (max-width: 980px) {
+    .content{width:90%;}
+}
+@media (min-width: 981px) and (max-width: 1200px) {
+	.content{width:980px;}
+}
